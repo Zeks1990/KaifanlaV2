@@ -1,0 +1,34 @@
+<div id="detail" data-role="page" ng-controller="detailCtrl">
+  <div data-role="header" data-position="fixed">
+    <h3>菜品详情</h3>
+    <a href="../index.html">开饭啦</a>
+    <a href="../index.html" class="ui-btn ui-icon-home ui-corner-all ui-btn-icon-notext"></a>
+  </div>
+  <div class="ui-content">
+    <div>
+      <div>
+        <h3>{{dish.name}}</h3>
+        <hr>
+        <img src="../img/{{dish.img_lg}}" alt="" class="img-response">
+        <div>
+          <div><b>主要原料：</b>{{dish.material}}</div>
+          <div>{{dish.detail}}</div>
+          <span>￥{{dish.price}}</span>
+        </div>
+        <div>
+          <a class="ui-btn ui-btn-inline" href="order.html?did={{dish.did}}">我要订餐</a>
+          <a class="ui-btn ui-btn-inline" href="main.html">我再看看</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="main.html" class="ui-btn ui-icon-home ui-btn-icon-top"></a></li>
+        <li><a href="order.html" class="ui-btn ui-icon-user ui-btn-icon-top"></a></li>
+        <li><a href="myorder.html" class="ui-btn ui-icon-bullets ui-btn-icon-top"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+body {
+  font-family: 'SimHei';
+}
+.img-response {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+div[data-role="footer"] > div > ul > li > a {
+  border: none;
+}
+.alert {
+  border: 1px solid transparent;
+  padding: 6px;
+}
+.alert-danger {
+  border-color: #d9534f;
+  background-color: #f4cecd;
+  color: #c9302c;
+}
+#start > div {
+  text-align: center;
+  top: 20%;
+  position: absolute;
+  width: 100%;
+}
+#start > div h1 {
+  font-size: 4em;
+  color: #999;
+}
+#main .dish-img-sm {
+  top: 20px;
+  left: 15px;
+}
+#main .price {
+  font-weight: bold;
+  color: #a33;
+  border-top: 1px solid #ddd;
+  padding-top: .5em;
+}
+#main > div.ui-content > div.ui-grid-b {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: .3125em;
+}
+#main > div.ui-content > div.ui-grid-b > div.b-66 {
+  width: 66.666%;
+}
+#main > div.ui-content > div.ui-grid-b > div.b-66 > h3 {
+  margin: 0 0 5px 0;
+}

@@ -1,0 +1,45 @@
+<div id="main" data-role="page" ng-controller="mainCtrl">
+  <div data-role="header" data-position="fixed">
+    <h3>菜单</h3>
+    <a href="#" data-rel="back">开饭啦</a>
+    <a href="#" class="ui-btn ui-icon-bars ui-corner-all ui-btn-icon-notext"></a>
+  </div>
+  <div class="ui-content">
+    <form>
+      <label for="mSearch" class="ui-hidden-accessible">搜索菜品</label>
+      <input id="mSearch" type="search" ng-model="kw" placeholder="搜索菜品名称和原料...">
+    </form>
+    <!--<div class="ui-grid-b ui-responsive" ng-repeat="d in dishList">-->
+    <!--<div class="ui-block-a">-->
+    <!--<a href="detail.html"><img ng-src="../img/{{d.img_sm}}" alt="" class="img-response"></a>-->
+    <!--</div>-->
+    <!--<div class="ui-block-b b-66">-->
+    <!--<h3>{{d.name}}</h3>-->
+    <!--<div>{{d.material}}</div>-->
+    <!--<hr>-->
+    <!--<span class="price">{{d.price}}</span>-->
+    <!--</div>-->
+    <!--</div>-->
+    <ul data-role="listview" data-inset="true">
+      <li ng-repeat="d in dishList">
+        <a href="detail.html?did={{d.did}}">
+          <img ng-src="../img/{{d.img_sm}}" class="dish-img-sm" alt="">
+          <h3>{{d.name}}</h3>
+          <p>{{d.material}}</p>
+          <p class="price">￥{{d.price}}</p>
+        </a>
+      </li>
+    </ul>
+    <a href="#" class="ui-btn ui-corner-all" ng-click="loadMore()" ng-show="hasMore">加载更多</a>
+    <div class="alert alert-danger ui-corner-all" ng-hide="hasMore">没有更多数据了！</div>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="main.html" class="ui-btn ui-icon-home ui-btn-icon-top"></a></li>
+        <li><a href="order.html" class="ui-btn ui-icon-user ui-btn-icon-top"></a></li>
+        <li><a href="myorder.html" class="ui-btn ui-icon-bullets ui-btn-icon-top"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>

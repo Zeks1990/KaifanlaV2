@@ -1,0 +1,27 @@
+<div id="order" data-role="page" ng-controller="orderCtrl">
+  <div data-role="header" data-position="fixed">
+    <h3>菜品详情</h3>
+    <a href="../index.html">开饭啦</a>
+    <a href="../index.html" class="ui-btn ui-icon-home ui-corner-all ui-btn-icon-notext"></a>
+  </div>
+  <div class="ui-content">
+    <form action="">
+      <label for="uname">联系人：</label>
+      <input type="text" id="uname">
+      <label for="sex">性别：</label>
+      <select id="sex" ng-model="sex" data-role="slider" data-mini="true">
+        <option active value="m">男</option>
+        <option value="fm">女</option>
+      </select>
+    </form>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="main.html" class="ui-btn ui-icon-home ui-btn-icon-top"></a></li>
+        <li><a href="order.html" class="ui-btn ui-icon-user ui-btn-icon-top"></a></li>
+        <li><a href="myorder.html" class="ui-btn ui-icon-bullets ui-btn-icon-top"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
